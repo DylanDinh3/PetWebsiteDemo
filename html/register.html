@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sniglet&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="grid_container">
+      <div class="logo">
+        <a href="index.html">
+          <h1 style="color: white; font-family: 'Sniglet', cursive">
+            Pet Adoption Website
+          </h1>
+        </a>
+      </div>
+      <div class="nav_bar">
+        <a href="index.html"><div>Home</div></a>
+        <div>Pets</div>
+        <div>Contact</div>
+        <div>About</div>
+      </div>
+      <div class="LoginRegister">
+        <a href="login.html">Login</a>
+        <a href="register.html">Register</a>
+      </div>
+      <div class="RegisterForm">
+        <form name="form" action="index.html" onsubmit="return ValidateEmail()">
+          <h1>Register</h1>
+          <label for="firstName">First name:</label>
+          <input
+            type="text"
+            id="firstName"
+            name="firstName"
+            placeholder="Enter first name"
+          />
+          <br />
+          <label for="lastName">Last name:</label>
+          <input
+            type="text"
+            id="lastName"
+            name="lastName"
+            placeholder="Enter last name"
+          />
+          <br />
+          <label for="email">Email: </label>
+          <input
+            type="text"
+            id="email"
+            name="email"
+            placeholder="Enter email"
+          />
+          <br />
+          <label for="username">Username:</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Enter username"
+          />
+          <br />
+          <label for="password">Password: </label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter password"
+          />
+          <br />
+          <label for="pref">Looking for: </label>
+          <select name="preference" id="pref">
+            <option value="Cats">Cats</option>
+            <option value="Dogs">Dogs</option>
+            <option value="Others">Others</option>
+            <option value="None">Unsure</option>
+          </select>
+          <br />
+          <button type="submit">Register</button>
+        </form>
+      </div>
+      <div class="footer">
+        <div class="footerLogo">
+          <a href="index.html">
+            <h1 style="color: white; font-family: 'Sniglet', cursive">
+              Pet Adoption Website
+            </h1>
+          </a>
+        </div>
+        <p>© 2022 Pet Adoption Website</p>
+      </div>
+    </div>
+    <script src="../js/register.js"></script>
+  </body>
+</html>
