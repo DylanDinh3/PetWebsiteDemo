@@ -42,12 +42,10 @@ function hideDogsDescription() {
 
 function showOthersDescription() {
   othersDescription.style.display = "flex";
-  footer.style.display = "none";
 }
 
 function hideOthersDescription() {
   othersDescription.style.display = "none";
-  footer.style.display = "block";
 }
 
 function insertCatsIntoTable() {

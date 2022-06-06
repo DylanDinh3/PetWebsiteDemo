@@ -157,7 +157,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--secondary-color);
+  background-color: var(--tertiary-color);
 }
 
 #catsTable > th,
@@ -191,7 +191,7 @@ td {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--secondary-color);
+  background-color: var(--tertiary-color);
 }
 
 #dogsTable > th,
@@ -201,9 +201,15 @@ td {
   border: 1px solid white;
 }
 
-#others {
+#othersSection {
+  display: block;
   grid-area: 3 / 1 / 4 / 5;
+  border-radius: 5px;
+}
+
+#others {
   display: flex;
+  height: 350px;
   justify-content: center;
   font-size: xx-large;
   font-family: "Sniglet", cursive;
@@ -221,12 +227,14 @@ td {
 }
 
 #othersDescription {
-  grid-area: 4 / 1 / 5 / 5;
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: absolute;
   padding: 10px;
-  background-color: var(--secondary-color);
+  background-color: var(--tertiary-color);
+  border-radius: 5px;
+  z-index: 1;
 }
 
 .footer {
